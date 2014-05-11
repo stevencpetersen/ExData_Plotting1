@@ -1,6 +1,6 @@
 plot1<-function() {
       
-# Set-up date conversion for use is read.table
+# Set-up date conversion for use in read.table
       setClass('myDate')
       setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y"))
       
